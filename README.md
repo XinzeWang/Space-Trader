@@ -25,7 +25,7 @@ The design and structure of the Space Trader game originated from ***CS2340 "Obj
 ## Project Highlights
 ### Game Login
 <br><br>
- ![image1](https://github.com/XinzeWang/Space-Trader/raw/master/readme-resource/screen1.png)
+ ![image1](https://github.com/XinzeWang/Space-Trader/blob/master/readme-resource/screen1.png)
  <br><br>
 ### Player Allocate Points 
 <br><br>
