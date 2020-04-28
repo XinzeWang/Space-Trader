@@ -1,0 +1,139 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="510.0" prefWidth="640.0" fx:controller="pineapple.Controller4UniverseMap"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <Label layoutX="300.0" layoutY="0.0" prefHeight="169.0" prefWidth="264.0" text="Universe Map">
+                <font>
+                    <Font size="20.0"/>
+                </font>
+            </Label>
+            <Label fx:id="l0" text="Base">
+                <graphic>
+                    <ImageView fx:id="imageView0" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/base.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Label>
+
+            <Button fx:id="region1" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView1" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region1.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region2" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView2" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region2.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region3" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView3" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region3.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region4" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView4" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region4.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region5" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView5" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region5.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region6" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView6" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region6.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region7" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView7" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region7.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region8" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView8" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region8.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region9" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView9" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region9.png" backgroundLoading="true"/>
+
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="region10" prefHeight="50.0" prefWidth="100.0" onAction="#goRegion">
+                <graphic>
+                    <ImageView fx:id="imageView10" fitHeight="50.0" fitWidth="20.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@resource/region10.png" backgroundLoading="true"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+        </AnchorPane>
+    </children>
+</VBox>

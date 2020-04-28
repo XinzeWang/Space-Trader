@@ -1,0 +1,38 @@
+.root {
+   -fx-background-image: url("../resource/Screen0.jpg");
+}
+
+.label {
+   -fx-font-size: 35px;
+   -fx-text-alignment: center;
+   -fx-font-weight: bold;
+   -fx-text-fill: #f1fcfc;
+   -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+   -fx-font-family: "Palatino";
+}
+
+.warm-theme {
+   -fx-background-color: #f1f3f4;
+   -fx-text-fill: black;
+}
+
+/* Button */
+.btn-basic {
+   -fx-text-alignment: center;
+   -fx-pref-height: 42px;
+   -fx-padding: 0 18px;
+   -fx-border-style: none;
+   -fx-cursor: pointer;
+   -fx-font-size: 18px;
+   -fx-font-family: "Palatino";
+}
+
+.btn-basic:hover {
+   -fx-font-weight: bold;
+   -fx-opacity: 0.7;
+}
+
+.btn-radius-normal {
+   -fx-border-radius: 2px;
+   -fx-background-radius: 2px;
+}

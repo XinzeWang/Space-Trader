@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="pineapple.Controller1Initconf">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="title" layoutX="300.0" layoutY="24.0" prefHeight="69.0" prefWidth="264.0"
+                       text="Initial Configuration"
+                       styleClass="label">
+                    <font>
+                        <Font size="30.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="confirm" layoutX="330.0" layoutY="450.0" mnemonicParsing="false"
+                        onAction="#characterSheet" prefHeight="47.0" prefWidth="151.0" text="confirm"
+                        styleClass="btn-basic"/>
+                <TextField fx:id="characterName" layoutX="325.0" layoutY="140.0" prefHeight="27.0" prefWidth="205.0"
+                />
+                <Label layoutX="112.0" layoutY="142.0" prefHeight="23.0" prefWidth="210.0" text="Character Name">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label styleClass="label" layoutX="112.0" layoutY="202.0" prefHeight="23.0" prefWidth="210.0"
+                       text="Difficulty">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="difficultyBox" layoutX="325.0" layoutY="200.0" prefHeight="27.0" prefWidth="205.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Easy"/>
+                            <String fx:value="Normal"/>
+                            <String fx:value="Difficult"/>
+                            <String fx:value="Hell"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Label styleClass="label" layoutX="112.0" layoutY="262.0" prefHeight="23.0" prefWidth="210.0"
+                       text="Skill Points">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label styleClass="label" fx:id="remainPoints" layoutX="325.0" layoutY="260.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="reset" layoutX="410.0" layoutY="260.0" mnemonicParsing="false" onAction="#resetPoints"
+                        prefHeight="27.0" prefWidth="80.0" text="reset" styleClass="btn-basic"/>
+                <Button fx:id="pilot" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#skillPilot"
+                        prefHeight="60.0" prefWidth="80.0" text="pilot" styleClass="btn-basic, btn-skill"/>
+                <Button fx:id="fighter" layoutX="280.0" layoutY="325.0" mnemonicParsing="false" onAction="#skillFighter"
+                        prefHeight="60.0" prefWidth="80.0" text="fighter" styleClass="btn-basic, btn-skill"/>
+                <Button fx:id="merchant" layoutX="410.0" layoutY="325.0" mnemonicParsing="false"
+                        onAction="#skillMerchant" prefHeight="60.0" prefWidth="80.0" text="merchant"
+                        styleClass="btn-basic, btn-skill"/>
+                <Button fx:id="engineer" layoutX="540.0" layoutY="325.0" mnemonicParsing="false"
+                        onAction="#skillEngineer" prefHeight="60.0" prefWidth="80.0" text="engineer"
+                        styleClass="btn-basic, btn-skill"/>
+
+                <Label styleClass="label" fx:id="pilotPoints" alignment="CENTER" layoutX="150.0" layoutY="400.0"
+                       prefHeight="20.0"
+                       prefWidth="80.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label styleClass="label" fx:id="fighterPoints" alignment="CENTER" layoutX="280.0" layoutY="400.0"
+                       prefHeight="20.0"
+                       prefWidth="80.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label styleClass="label" fx:id="merchantPoints" alignment="CENTER" layoutX="410.0" layoutY="400.0"
+                       prefHeight="20.0"
+                       prefWidth="80.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label styleClass="label" fx:id="engineerPoints" alignment="CENTER" layoutX="540.0" layoutY="400.0"
+                       prefHeight="20.0"
+                       prefWidth="80.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

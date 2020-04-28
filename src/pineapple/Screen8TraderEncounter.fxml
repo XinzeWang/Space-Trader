@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pineapple.Controller8TraderEncounter">
+<children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <children>
+
+            <Label fx:id="itemInfo" layoutX="112.0" layoutY="36.0" prefHeight="23.0" prefWidth="600.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+
+            <Label fx:id="originalPrice" layoutX="112.0" layoutY="66.0" prefHeight="23.0" prefWidth="400.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+
+            <Label fx:id="negotiatedPrice" layoutX="112.0" layoutY="96.0" prefHeight="23.0" prefWidth="400.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+
+            <Label fx:id="playerCredit" layoutX="112.0" layoutY="126.0" prefHeight="23.0" prefWidth="400.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+
+
+
+            <Button fx:id="Buy" layoutX="370.0" layoutY="400.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="151.0" text="Buy items" onAction="#handleBuy"/>
+            <Button fx:id="Ignore" layoutX="220.0" layoutY="400.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="100.0" text="Ignore" onAction="#handleIgnore"/>
+            <Button fx:id="Rob" layoutX="370.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="100.0" text="Rob the trader" onAction="#handleRob"/>
+            <Button fx:id="Negotiate" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="100.0" text="Negotiate" onAction="#handleNegotiate"/>
+        </children>
+    </AnchorPane>
+</children>
+</VBox>

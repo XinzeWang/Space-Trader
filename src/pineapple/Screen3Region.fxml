@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <Label layoutX="80.0" layoutY="40.0" prefHeight="23.0" prefWidth="210.0"
+                   text="Region Characteristics: ">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="72.0" prefHeight="23.0" prefWidth="210.0" text="Region Name: ">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label fx:id="name" layoutX="270.0" layoutY="72.0" prefHeight="23.0" prefWidth="210.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="102.0" prefHeight="23.0" prefWidth="210.0" text="Tech Level: ">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label fx:id="tech" layoutX="270.0" layoutY="102.0" prefHeight="23.0" prefWidth="210.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="132.0" prefHeight="23.0" prefWidth="210.0" text="Description: ">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label fx:id="description" layoutX="270.0" layoutY="132.0" prefHeight="75.0" prefWidth="2100.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="200.0" prefHeight="23.0" prefWidth="210.0" text="Marketplace: ">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <HBox fx:id="chooseIdH" layoutX="550" layoutY="250" prefHeight="100" prefWidth="250"></HBox>
+            <GridPane fx:id="marketplace" layoutX="50" layoutY="120"
+                      prefHeight="400" prefWidth="320"
+                      alignment="center" hgap="8" vgap="8">
+            </GridPane>
+            <VBox fx:id="chosenItemV" layoutX="500" layoutY="300"
+                  prefHeight="100" prefWidth="20"
+                  alignment="center">
+            </VBox>
+            <Button fx:id="visit" layoutX="80.0" layoutY="450.0" mnemonicParsing="false" onAction="#visitRegion"
+                    prefHeight="47.0" prefWidth="120.0" text="Visit the Region"/>
+            <Button fx:id="toNearby" layoutX="210.0" layoutY="450.0" mnemonicParsing="false" onAction="#toNearby"
+                    prefHeight="47.0" prefWidth="120.0" text="To Nearby"/>
+            <Button fx:id="toPrevious" layoutX="340.0" layoutY="450.0" mnemonicParsing="false"
+                    onAction="#toPrevious" prefHeight="47.0" prefWidth="120.0" text="To Previous"/>
+            <Button fx:id="universeMap" layoutX="470.0" layoutY="450.0" mnemonicParsing="false" onAction="#goMap"
+                    prefHeight="47.0" prefWidth="120.0" text="Universe Map"/>
+            <Button fx:id="equipment" layoutX="600.0" layoutY="450.0" mnemonicParsing="false" onAction="#goEquipment"
+                    prefHeight="47.0" prefWidth="120.0" text="Equipment"/>
+            <Canvas fx:id="marketCanvas" height="200.0" width="500.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0"/>
+        </AnchorPane>
+    </children>
+</VBox>

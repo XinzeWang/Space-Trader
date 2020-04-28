@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pineapple.Controller7BanditEncounter">
+<children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <children>
+            <Label  layoutX="200.0" layoutY="24.0" prefHeight="69.0" prefWidth="500.0"
+                   text="You encounter a bandit!!!">
+                <font>
+                    <Font size="20.0"/>
+                </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="54.0" prefHeight="69.0" prefWidth="500.0"
+                   text="You Want to: ">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+            </Label>
+            <Button fx:id="Pay" layoutX="300.0" layoutY="100.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="151.0" text="Pay Credits" onAction="#payCredit"/>
+            <Button fx:id="Flee" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="151.0" text="Try To Flee" onAction="#fleeBack"/>
+            <Button fx:id="Fight" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="47.0"
+                    prefWidth="151.0" text="Fight!!!" onAction="#fightAgainst"/>
+<!--            <Button fx:id="back" layoutX="300.0" layoutY="450.0" mnemonicParsing="false" prefHeight="47.0"-->
+<!--                    prefWidth="151.0" text="Back" onAction="#goBack"/>-->
+
+        </children>
+    </AnchorPane>
+</children>
+</VBox>

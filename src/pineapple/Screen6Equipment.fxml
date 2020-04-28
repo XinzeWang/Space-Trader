@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pineapple.Controller6Equipment">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="title" layoutX="300.0" layoutY="24.0" prefHeight="69.0" prefWidth="264.0"
+                       text="Equipment">
+                    <font>
+                        <Font size="30.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="112.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0" text="Engineer Point">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="112.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0" text="Fighter Point">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="engineerPoint" layoutX="250.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="fighterPoint" layoutX="250.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+
+                <Label layoutX="450.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0" text="Pilot Point">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="450.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0" text="Merchant Point">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="pilotPoint" layoutX="600.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="merchantPoint" layoutX="600.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label layoutX="112.0" layoutY="200.0" prefHeight="23.0" prefWidth="210.0" text="Weapon :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="weaponBox" layoutX="200.0" layoutY="200.0" prefHeight="27.0" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="No Weapon"/>
+                            <String fx:value="Ray Gun"/>
+                            <String fx:value="Thunder Gun"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Label layoutX="450.0" layoutY="200.0" prefHeight="23.0" prefWidth="210.0" text="Scroll :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="scrollBox" layoutX="538.0" layoutY="200.0" prefHeight="27.0" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="No Scroll"/>
+                            <String fx:value="Engineer Scroll"/>
+                            <String fx:value="Pilot Scroll"/>
+                            <String fx:value="Merchant Scroll"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+
+                <Label layoutX="450.0" layoutY="200.0" prefHeight="23.0" prefWidth="210.0" text="Scroll :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="shipInfo" layoutX="260.0" layoutY="230" prefHeight="69.0" prefWidth="264.0"
+                       text="Ship Information">
+                    <font>
+                        <Font size="30.0"/>
+                    </font>
+                </Label>
+
+                <Label layoutX="112.0" layoutY="300.0" prefHeight="23.0" prefWidth="210.0" text="Remaining Fuel">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="fuel" layoutX="260.0" layoutY="300.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="450.0" layoutY="300.0" prefHeight="23.0" prefWidth="210.0" text="Remaining Health">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="health" layoutX="640.0" layoutY="300.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Button fx:id="refuel" layoutX="150.0" layoutY="330.0" mnemonicParsing="false"
+                        onAction="#refuel" prefHeight="47.0" prefWidth="120.0" text="refuel"/>
+                <Button fx:id="repair" layoutX="470.0" layoutY="330.0" mnemonicParsing="false"
+                        onAction="#repair" prefHeight="47.0" prefWidth="120.0" text="repair"/>
+
+
+                <Label layoutX="112.0" layoutY="400" prefHeight="23.0" prefWidth="210.0" text="Remaining Credits">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="credit" layoutX="280.0" layoutY="400.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="back" layoutX="380.0" layoutY="450.0" mnemonicParsing="false"
+                        onAction="#back" prefHeight="47.0" prefWidth="120.0" text="back"/>
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

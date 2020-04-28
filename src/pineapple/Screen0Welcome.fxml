@@ -1,0 +1,22 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="640.0" fx:controller="pineapple.Controller0Welcome"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS"
+        >
+            <Label layoutX="156.0" layoutY="220.0" prefHeight="169.0" prefWidth="264.0" text="Space Trader"
+                   styleClass="label">
+                <font>
+                    <Font size="40.0"/>
+                </font>
+            </Label>
+            <Button fx:id="startGame" layoutX="182.0" layoutY="350.0" mnemonicParsing="false" prefHeight="60.0"
+                    prefWidth="170.0" text="Start" onAction="#startGame"
+                    styleClass="btn-basic, warm-theme, btn-radius-normal"/>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pineapple.Controller5ShipInfo">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="title" layoutX="300.0" layoutY="24.0" prefHeight="69.0" prefWidth="264.0"
+                                                                                        text="Ship Info">
+                <font>
+                    <Font size="30.0"/>
+                </font>
+            </Label>
+                <Label layoutX="112.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0" text="Ship Name :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="112.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0" text="Cargo Capacity :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="shipName" layoutX="250.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="cargoCapacity" layoutX="250.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+
+                <Label layoutX="500.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0" text="Fuel Capacity :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="500.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0" text="Health :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="fuelCapacity" layoutX="650.0" layoutY="150.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="health" layoutX="650.0" layoutY="100.0" prefHeight="23.0" prefWidth="210.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="112.0" layoutY="200.0" prefHeight="23.0" prefWidth="210.0" text="Inventory :">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="items" layoutX="112.0" layoutY="220.0" prefHeight="200.0" prefWidth="400.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+
+
+                <ImageView fx:id="imageView"  layoutX="550" layoutY="300" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@resource/ship1.png" backgroundLoading="true"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="back" layoutX="370.0" layoutY="450.0" mnemonicParsing="false" prefHeight="47.0"
+                        prefWidth="151.0" text="Back" onAction="#goBack"/>
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

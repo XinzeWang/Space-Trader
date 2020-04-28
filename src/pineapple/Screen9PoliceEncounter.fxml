@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pineapple.Controller9PoliceEncounter">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+
+                <Label fx:id="itemInfo" layoutX="112.0" layoutY="36.0" prefHeight="23.0" prefWidth="600.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="originalPrice" layoutX="112.0" layoutY="66.0" prefHeight="23.0" prefWidth="400.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="negotiatedPrice" layoutX="112.0" layoutY="96.0" prefHeight="23.0" prefWidth="400.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="playerCredit" layoutX="112.0" layoutY="126.0" prefHeight="23.0" prefWidth="400.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+
+
+                <Button fx:id="Forfeit" layoutX="370.0" layoutY="400.0" mnemonicParsing="false" prefHeight="47.0"
+                        prefWidth="151.0" text="Forfeit" onAction="#handleForfeit"/>
+                <Button fx:id="Flee" layoutX="370.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0"
+                        prefWidth="100.0" text="Flee" onAction="#handleFleeBack"/>
+                <Button fx:id="Fight" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" prefHeight="47.0"
+                        prefWidth="100.0" text="Fight" onAction="#handleFight"/>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

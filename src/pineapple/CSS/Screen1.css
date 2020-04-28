@@ -1,0 +1,80 @@
+.root {
+   -fx-background-image: url("../resource/Screen1.jpg");
+   -fx-text-fill: black;
+   -fx-font-family: "Palatino";
+}
+
+#title {
+   -fx-font-size: 25px;
+}
+
+.label {
+   -fx-font-size: 20px;
+   -fx-text-alignment: center;
+   -fx-font-weight: bold;
+   -fx-text-fill: #f1fcfc;
+   -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+   -fx-font-family: "Palatino";
+}
+
+/* Text Field */
+#characterName {
+  -fx-pref-height: 35px;
+  -fx-pref-width: 205px;
+  -fx-background-color: #f1f3f4;
+  -fx-font-size: 20px;
+}
+
+/* Choice Box */
+#difficultyBox {
+  -fx-pref-height: 25px;
+  -fx-pref-width: 205px;
+  -fx-background-color: #f1f3f4;
+  -fx-mark-color: black;
+  -fx-text-fill: black;
+  -fx-font-size: 20px;
+}
+
+#difficultyBox .label {
+    -fx-text-fill: black;
+}
+
+
+/* Button */
+.btn-basic {
+   -fx-text-alignment: center;
+   -fx-padding: 0 6px;
+   -fx-border-style: none;
+   -fx-cursor: pointer;
+   -fx-background-color: #f1f3f4;
+   -fx-text-fill: black;
+   -fx-border-radius: 2px;
+   -fx-background-radius: 2px;
+   -fx-font-family: "Palatino";
+}
+
+.btn-skill {
+   -fx-pref-height: 60px;
+   -fx-pref-width: 80px;
+   -fx-font-size: 15px;
+}
+
+#confirm {
+   -fx-pref-height: 50px;
+   -fx-pref-width: 150px;
+   -fx-font-size: 20px;
+   -fx-background-color: #ffa41b;
+}
+
+#reset {
+   -fx-pref-height: 45px;
+   -fx-pref-width: 60px;
+   -fx-font-size: 13px;
+   -fx-background-color: #ecce6d;
+}
+
+.btn-basic:hover {
+   -fx-font-weight: bold;
+   -fx-opacity: 0.7;
+}
+

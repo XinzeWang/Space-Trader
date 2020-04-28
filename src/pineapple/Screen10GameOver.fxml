@@ -1,0 +1,53 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="640.0" fx:controller="pineapple.Controller10GameOver"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS"
+        >
+            <Label fx:id="gameOver" layoutX="270.0" layoutY="75.0" prefHeight="20.0" prefWidth="500.0" text="Game Over"
+                   styleClass="label">
+                <font>
+                    <Font size="40.0"/>
+                </font>
+            </Label>
+
+            <Label id="thank" layoutX="250.0" layoutY="125.0" prefHeight="169.0" prefWidth="500.0" text="Thank you for playing!"
+                   styleClass="label">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+
+            <Label fx:id="team" layoutX="300.0" layoutY="175.0" prefHeight="169.0" prefWidth="500.0" text="CS 2340 team 49"
+                   styleClass="label">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+
+            <Label fx:id="people1" layoutX="240.0" layoutY="200.0" prefHeight="169.0" prefWidth="500.0" text="Xueyang Zhang, Xinze Wang, Jing Shi"
+                   styleClass="label">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Label fx:id="people2" layoutX="290.0" layoutY="225.0" prefHeight="169.0" prefWidth="500.0" text="Zhekun Qi, Cheng Zhang"
+                   styleClass="label">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+
+            <Button fx:id="restart" layoutX="150.0" layoutY="400.0" mnemonicParsing="false" prefHeight="60.0"
+                    prefWidth="170.0" text="Restart" onAction="#restart"
+                    styleClass="btn-basic, warm-theme, btn-radius-normal"/>
+            <Button fx:id="exit" layoutX="450.0" layoutY="400.0" mnemonicParsing="false" prefHeight="60.0"
+                    prefWidth="170.0" text="Exit" onAction="#exit"
+                    styleClass="btn-basic, warm-theme, btn-radius-normal"/>
+        </AnchorPane>
+    </children>
+</VBox>
